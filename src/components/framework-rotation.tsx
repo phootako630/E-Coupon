@@ -3,7 +3,9 @@ import { assets } from "@/app/utils/asset-utils";
 import { type Framework, frameworks } from "@/app/utils/framework-utils";
 import { cn } from "@/app/utils/tailwind-utils";
 
-export const FrameworkRotation = ({ currentFramework }) => {
+export const FrameworkRotation = ({ currentFramework } : {
+    currentFramework: Framework;
+}) => {
 
     return <div className="w-[80px] h-[80px] mx-2 -mt-2 align-middle inline-flex relative">
         {
